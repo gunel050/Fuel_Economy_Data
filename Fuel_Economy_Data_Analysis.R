@@ -21,7 +21,7 @@ df %>% skim()
 df %>% inspect_na() %>% 
   filter(pcnt<30) %>% 
   pull(col_name) -> variables
-
+#ilk evvel inspect_na edib baxin, eger yoxdursa null elave koda gerek yoxdur
 df <- df %>% select(variables)
 df %>% inspect_na()
 
